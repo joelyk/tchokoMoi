@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    TchokoMoi — activity_main.xml
+    Écran principal (émetteur)
+    Jour 1 — Interface utilisateur
+-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ── En-tête ───────────────────────────────────── -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TchokoMoi"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#D35400"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Envoie ton argent à un ami"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tvSolde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solde : 500,00 XAF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#1E8449"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ── Formulaire ─────────────────────────────────── -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Destinataire -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destinataire"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"/>
+
+            <!--
+            ╔═══════════════════════════════════════════════╗
+            ║  TODO — Exercice 2                            ║
+            ║  Ajouter ici le EditText etDestinataire       ║
+            ║  id        : etDestinataire                   ║
+            ║  hint      : "Ex : Kouam Jean"                ║
+            ║  inputType : text                             ║
+            ╚═══════════════════════════════════════════════╝
+            -->
+
+            <!-- Montant -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Montant à envoyer"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etMontant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex : 500"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Devise -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devise"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerDevise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Message -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message (optionnel)"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex : Remboursement repas"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <!-- ── Boutons ────────────────────────────────────── -->
+
+        <Button
+            android:id="@+id/btnRechercher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rechercher un appareil"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnEnvoyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Envoyer"
+            android:enabled="false"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ── Historique ─────────────────────────────────── -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Historique des transferts"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <ListView
+            android:id="@+id/lvHistorique"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    </LinearLayout>
+</ScrollView>

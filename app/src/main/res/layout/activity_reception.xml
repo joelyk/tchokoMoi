@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    TchokoMoi — activity_reception.xml
+    Écran récepteur
+
+    TODO — Jour 2 : construire ce layout
+    Éléments attendus :
+      - tvStatut    : "En attente de transfert..."
+      - tvMontantRecu : montant reçu (ex : "+ 200 XAF")
+      - tvMessageRecu : message reçu
+      - btnRetour   : bouton "← Retour"
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#E8F5E9">
+
+    <!-- TODO — Jour 2 : ajouter les widgets ici -->
+
+</LinearLayout>
