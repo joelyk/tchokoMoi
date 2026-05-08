@@ -25,15 +25,7 @@ C'est exactement ce qu'on règle aujourd'hui.
 - Avoir **deux écrans** : envoi (MainActivity) et réception (ReceptionActivity)
 - Permettre de naviguer entre les deux écrans avec un bouton
 
-```
-┌──────────────────────────┐          ┌──────────────────────────┐
-│       TchokoMoi          │  📥 →   │    Mode Réception        │
-│  Solde : 300 XAF (sauvé!)│          │  En attente...           │
-│  [Destinataire]          │  ← ←    │  + 200 XAF               │
-│  [Mode Réception 📥]     │  finish()│  [← Retour]              │
-└──────────────────────────┘          └──────────────────────────┘
-       MainActivity                        ReceptionActivity
-```
+![MainActivity et ReceptionActivity](mainAct_ReceptipnAct_TchokoMoi Projet Android.png)
 
 ---
 
@@ -41,7 +33,7 @@ C'est exactement ce qu'on règle aujourd'hui.
 
 ### SharedPreferences — le carnet de notes de l'app
 
-![SharedPreferences Android](https://miro.medium.com/v2/resize:fit:1400/1*4B_ovyBKpxYbEQB4B3nEtA.png)
+![SharedPreferences Android](shared_p.png)
 
 `SharedPreferences` est un **fichier XML léger** géré par Android, idéal pour des petites données clé-valeur (préférences, scores, état...). Il survit à la fermeture de l'app, aux rotations d'écran, et aux redémarrages du téléphone.
 
@@ -107,7 +99,9 @@ startActivity(intent);
 finish();
 ```
 
-![Android Intent Navigation](https://miro.medium.com/v2/resize:fit:1400/1*kHj_FXHWGEMixUqKSGUqLg.png)
+![Android Intent expliqué](What-is-Android-Intent-Explained.png)
+
+![Intent explicite vs implicite](Explicit-and-Implicit-Android-Intent-Explained.png)
 
 Android gère une **pile d'Activities** (back stack). `startActivity()` empile, `finish()` (ou le bouton Retour) dépile.
 

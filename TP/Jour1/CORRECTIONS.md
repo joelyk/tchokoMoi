@@ -13,16 +13,7 @@
 - **`android:gravity`** → aligne le **contenu à l'intérieur** du widget (le texte dans la boîte)
 - **`android:layout_gravity`** → positionne **le widget lui-même** dans son parent (la boîte dans le conteneur)
 
-```
-┌──────────────────────────────────┐  ← Parent (LinearLayout)
-│                                  │
-│  ┌────────────────────────────┐  │
-│  │    gravity="center"        │  │  ← le texte est centré DANS le TextView
-│  └────────────────────────────┘  │
-│         ↑ layout_gravity="center" : le TextView est centré DANS le LinearLayout
-│                                  │
-└──────────────────────────────────┘
-```
+![Comprendre gravity et layout_gravity](Comprendre gravity et layout_gravity dans Android-TchokoMoi Projet Android.png)
 
 ### 2. Pourquoi `tvSolde` a un `id` mais pas le sous-titre ?
 
