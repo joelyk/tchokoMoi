@@ -25,7 +25,7 @@ C'est exactement ce qu'on règle aujourd'hui.
 - Avoir **deux écrans** : envoi (MainActivity) et réception (ReceptionActivity)
 - Permettre de naviguer entre les deux écrans avec un bouton
 
-![MainActivity et ReceptionActivity](mainAct_ReceptipnAct_TchokoMoi Projet Android.png)
+![MainActivity et ReceptionActivity](TchokoMoiTP2.png)
 
 ---
 
