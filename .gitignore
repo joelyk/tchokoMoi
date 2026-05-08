@@ -11,7 +11,7 @@ TchokoMoi_Jour3_Professeur.html
 *.pdf
 
 # ── Solutions et corrections (débloquées par l'enseignant en séance) ─
-TP/Jour1/CORRECTIONS.md
+# TP/Jour1/CORRECTIONS.md  ← débloqué
 TP/Jour2/CORRECTIONS.md
 TP/Jour3/CORRECTIONS.md
 
