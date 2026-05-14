@@ -21,16 +21,7 @@ Tu as maintenant une app avec deux écrans et une persistance des données. Le b
 - L'envoi d'argent transite réellement via Bluetooth
 - L'écran de réception affiche le transfert reçu en temps réel
 
-```
-Téléphone A (émetteur)            Téléphone B (récepteur)
-──────────────────────            ───────────────────────
-MainActivity                      ReceptionActivity
-  │                                     │
-  │  "200|XAF FCFA|Repas"               │
-  │ ──────────── BT RFCOMM ──────────►  │
-  │                               afficherTransfertRecu()
-  │                               tvMontantRecu = "+ 200 XAF"
-```
+![Bluetooth TchokoMoi](Bluetooth-TchokoMoi Projet Android.png)
 
 ---
 
@@ -48,15 +39,7 @@ C'est l'UUID déjà présent dans `BluetoothHelper.java`. Les deux appareils doi
 
 ### Architecture : Client / Serveur
 
-```
-Appareil B (serveur)          Appareil A (client)
-BluetoothServerSocket    ←→   BluetoothSocket
-listenUsingRfcomm()           createRfcommSocketToServiceRecord()
-serverSocket.accept()         socket.connect()
-     │                              │
-     └──────── connexion ───────────┘
-               InputStream / OutputStream
-```
+![Architecture Client Serveur Bluetooth](client_Serveur-TchokoMoi Projet Android.png)
 
 - Le **serveur** (récepteur) ouvre un `BluetoothServerSocket` et attend
 - Le **client** (émetteur) crée un `BluetoothSocket` et se connecte
